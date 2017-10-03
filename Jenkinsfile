@@ -8,7 +8,7 @@ pipeline {
     }
     stage('build') {
       steps {
-        jiraSearch 'project = "GTS SWES 2017" and issuetype = Triage and status = Open'
+        pwd()
       }
     }
     stage('Deploy') {
