@@ -8,8 +8,9 @@ pipeline {
     }
     stage('build') {
       steps {
-        pwd()
-        touch 'LisaPipelineTest'
+        sh '''ls -l
+
+'''
       }
     }
     stage('Deploy') {
