@@ -9,6 +9,7 @@ pipeline {
     stage('build') {
       steps {
         pwd()
+        touch(file: 'LisaPipelineTest', timestamp: -1)
       }
     }
     stage('Deploy') {
